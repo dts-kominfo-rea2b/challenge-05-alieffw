@@ -6,22 +6,7 @@ const names = ["Halo", "Angel", "Nyoman", "Ketut", "Aisyah"];
 // "1. Nama"
 // "2. Nama"
 // ...
-const sorter1 = (nama, sort) => (sort(nama).map((item, index) => `${index+1}. ${item}`))
-
-const sorter = (nama, sort) =>
-{
-  let varIndex = [];
-  varIndex = sort(nama);
-
-//   for(let index = 0; index < nama.length; index++)
-//   {
-//    varIndex.push(`${sort(nama[index])}`);
-//   //  varIndex += index +". "+ ;
-//   }
-//   //sort(nama)
-  
-  return varIndex;
-}
+const sorter = (nama, sort) => (sort(nama).map((item, index) => `${index+1}. ${item}`))
 
 // TODO: Fungsi untuk mengurutkan array of string secara ascending
 // mengembalikan array yang sudah diurutkan
